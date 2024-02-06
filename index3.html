@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+header { grid-area: header; }
+mav { grid-area: menu; }
+main { grid-area: main; }
+aside { grid-area: right; }
+footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+header,nav,main,aside,footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
+
+<div class="grid-container">
+  <header>Lempi's blog</header>
+  <nav>
+  <ul>
+  
+ <li> About me</li>
+ <li> contact</li>
+ <li> ask me questions</li>
+ </ul>
+  </nav>  
+  <main>About me
+  <br>
+  I am 20 years old girl living in Helsinki.
+  I study in Haaga-Helia University of Applied Science.
+  </main>
+  <aside>Right</aside>
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>
+
+
